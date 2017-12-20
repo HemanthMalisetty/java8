@@ -53,5 +53,14 @@ public class Calculator implements Interest,Factorial{
 		}
 		return fact;
 	}
+
+
+	@Override
+	public int doSum(int... a) {
+		
+		return Interest.super.doSum(a);
+	}
+	
+	
 	
 }
