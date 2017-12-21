@@ -18,17 +18,18 @@ public class EmployeeMemDao implements IDao{
 		empMap.put(1001, new Employee(1001, "rama", 45000, 1, LocalDate.of(2014, 3, 21)));
 		empMap.put(1002, new Employee(1002, "Sama", 45000, 1, LocalDate.of(2015, 5, 21)));
 		empMap.put(1003, new Employee(1003, "DRAMA", 25365, 1, LocalDate.of(2014, 6, 11)));
+		empMap.put(1004, new Employee(1004, "sambha", 25365, 1, LocalDate.of(2017, 6, 11)));
 	}
 
 	@Override
-	public List<Employee> viewEmployee() throws NotFoundException {
+	public List<Employee> viewEmployee() {
 		List<Employee> list=new ArrayList<Employee>();
 		list.addAll(empMap.values());
 		return list;
 	}
 
 	@Override
-	public Employee viewEmployee(int eid) throws IdException, NotFoundException {
+	public Employee viewEmployee(int eid) throws  NotFoundException {
 		if(!empMap.containsKey(eid))
 			throw new NotFoundException("Employee not found");
 		Employee emp=empMap.get(eid);
@@ -38,11 +39,11 @@ public class EmployeeMemDao implements IDao{
 	@Override
 	public int addEmployee(Employee emp) throws IdException {
 		
-		if(empMap.containsKey(emp.getDeptId()))
+		if(empMap.containsKey(emp.getEmpId()))
 			throw new IdException("Employee already exist");
 		else 
 			empMap.put(emp.getEmpId(), emp);
-		return emp.getEmpId();
+		return 1;
 	}
 
 	@Override

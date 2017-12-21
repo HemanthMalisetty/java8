@@ -30,10 +30,12 @@ public class EmployeeClient {
 				emenu=Menu.valueOf(menu);
 				processMenu(emenu);
 			} catch (Exception e) {
-				e.getMessage();
+				System.out.println("Invalid Menu Option");
 			}
 			System.out.println("Press y to continue...");
-		}while(option.equals("y") );
+			option = scanner.next();
+		}while(option.equalsIgnoreCase("y") );
+		
 
 	}
 	
@@ -55,7 +57,7 @@ public class EmployeeClient {
 	}
 	
 	
-	public static void viewAll() throws NotFoundException{
+	public static void viewAll() {
 		List<Employee> list=dao.viewEmployee();
 			for (Employee employee : list) {
 				System.out.println(employee);
@@ -68,7 +70,7 @@ public class EmployeeClient {
 		try {
 			dao.viewEmployee(eid);
 			System.out.println(dao.viewEmployee(eid));
-		} catch (IdException | NotFoundException e) {
+		} catch (NotFoundException e) {
 			e.getMessage();
 		}
 	}
