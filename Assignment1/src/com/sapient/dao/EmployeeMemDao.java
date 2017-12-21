@@ -48,8 +48,13 @@ public class EmployeeMemDao implements IDao{
 
 	@Override
 	public int removeEmployee(int eid) throws NotFoundException {
-		// TODO Auto-generated method stub
-		return 0;
+		if(!empMap.containsKey(eid)){
+			throw new NotFoundException("Employee not found");
+			
+		}
+		else
+			empMap.remove(eid);
+		return eid;
 	}
 
 	@Override
