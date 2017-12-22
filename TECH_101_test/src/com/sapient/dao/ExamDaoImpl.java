@@ -8,7 +8,9 @@ import java.sql.SQLException;
 import java.util.HashMap;
 import java.util.Map;
 
+import com.sapient.util.ExamUtil;
 import com.sapient.vo.Questions;
+import static com.sapient.util.ExamUtil.*;
 
 public class ExamDaoImpl implements IDao {
 	private static IDao dao=new ExamDaoImpl();
@@ -23,7 +25,7 @@ public class ExamDaoImpl implements IDao {
 	static {
 		
 		try {
-			Class.forName("oracle.jdbc.driver.OracleDriver");
+			Class.forName(DRIVER);
 		} catch (ClassNotFoundException e) {
 			
 			e.printStackTrace();
@@ -34,9 +36,9 @@ public class ExamDaoImpl implements IDao {
 	public Map<Integer, Questions> viewQuestios() {
 		Map<Integer,Questions> map= new HashMap<>();
 		Questions questions=null;
-		String url="jdbc:oracle:thin:@localhost:1521:xe";
+		String url=URL;
 				
-		try(Connection con=DriverManager.getConnection(url,"system","Sapient@123")){
+		try(Connection con=DriverManager.getConnection(URL,USERNAME,PASSWORD)){
 			String sql="select * from questions";
 			PreparedStatement pst=con.prepareStatement(sql);
 			ResultSet rs=pst.executeQuery();
