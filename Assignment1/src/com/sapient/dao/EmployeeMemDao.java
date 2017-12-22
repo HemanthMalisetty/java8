@@ -19,6 +19,8 @@ public class EmployeeMemDao implements IDao{
 		empMap.put(1002, new Employee(1002, "Sama", 45000, 1, LocalDate.of(2015, 5, 21)));
 		empMap.put(1003, new Employee(1003, "DRAMA", 25365, 1, LocalDate.of(2014, 6, 11)));
 		empMap.put(1004, new Employee(1004, "sambha", 25365, 1, LocalDate.of(2017, 6, 11)));
+		empMap.put(1004, new Employee(2003, "bhabha", 25365, 1, LocalDate.of(2017, 6, 11)));
+		empMap.put(1004, new Employee(2004, "tamba", 25365, 1, LocalDate.of(2017, 6, 11)));
 	}
 
 	@Override

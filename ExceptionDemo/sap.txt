@@ -1,0 +1,8 @@
+delhi
+goa
+pune
+mumbai
+banglore
+chennai
+telangana
+pangi
