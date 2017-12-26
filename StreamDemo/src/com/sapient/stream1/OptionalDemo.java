@@ -10,6 +10,14 @@ public class OptionalDemo {
 		List<Integer> list=new ArrayList<Integer>();
 		Optional<Integer> opt=list.stream().findAny();
 		System.out.println(opt);
+		
+		String str=null;
+		Optional<String> res=Optional.ofNullable(str);
+		System.out.println(res);
+		if(res.isPresent())
+			System.out.println(res.get());
+		else
+			System.out.println("empty");
 
 	}
 
