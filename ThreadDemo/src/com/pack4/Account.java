@@ -2,7 +2,7 @@ package com.pack4;
 
 
 public class Account {
-	public volatile int balance;  //it can be used only by only one thread at a time
+	public volatile int balance;
 
 	
 	public Account(int balance) {
@@ -15,18 +15,12 @@ public class Account {
 		return balance;
 	}
 
-	
-	private void setBalance(int balance) {
-		
-		this.balance = balance;
-	}
-	
-	
-	public synchronized  void deposit(String name, int amt) {
+	public  synchronized void deposit(int amt) {
 	
 		for(int i=1; i<=500; ++i){
-			System.out.println(name + " doing tx " );
+			System.out.println(Thread.currentThread().getName() + " doing tx " );
 		}
+		balance = balance + amt;
 	}
 
 

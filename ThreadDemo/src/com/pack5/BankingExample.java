@@ -8,10 +8,10 @@ public class BankingExample {
 	 */
 	public static void main(String[] args) {
 		Account account = new Account(5000);
-		TomThread t1 = new TomThread(account, "Tom", 2500);
-		
-		PeterThread t2 = new PeterThread(account, "\tPeter", 3000);
-		
+		TomThread t1 = new TomThread(account,  2500);
+		t1.setName("tom");
+		PeterThread t2 = new PeterThread(account, 3000);
+		t2.setName("peter");
 		t1.start();
 		t2.start();
 		

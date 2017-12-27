@@ -10,6 +10,7 @@ public class ThreadClient {
 		
 		t1.start();
 		t2.start();
+//		t1.start();  //Exception in thread "main" java.lang.IllegalThreadStateException
 		
 		for(int i=1;i<=1000;i++){
 			System.out.println(Thread.currentThread().getName()+ " " + (i*5));
