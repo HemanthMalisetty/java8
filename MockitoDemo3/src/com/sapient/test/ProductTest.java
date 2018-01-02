@@ -84,6 +84,8 @@ public class ProductTest {
 		InOrder order=Mockito.inOrder(dao);
 		order.verify(dao).getCatNPro();
 		order.verify(dao).getProductSpec("thinkpad");
+		
+		
 	}
 	
 	@Test
