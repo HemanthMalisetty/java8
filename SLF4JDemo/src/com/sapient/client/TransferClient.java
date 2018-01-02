@@ -11,6 +11,7 @@ import com.sapient.service.SerImpl;
 public class TransferClient {
 
 	private static Logger logger=LoggerFactory.getLogger("sapient");
+//	private static Logger logger=LoggerFactory.getLogger(Logger.ROOT_LOGGER_NAME);
 	public static void main(String[] args) {
 		logger.trace("main thread start");
 		ISer ser=new SerImpl();

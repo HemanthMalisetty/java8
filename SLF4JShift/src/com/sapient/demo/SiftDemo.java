@@ -9,12 +9,14 @@ import org.slf4j.MDC;
 
 public class SiftDemo {
 
+	private static Logger log=LoggerFactory.getLogger(Logger.ROOT_LOGGER_NAME);
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		
 		System.out.println("enter the role");
 		String role = scan.next();
-		Logger log = LoggerFactory.getLogger("sapient");
+//		Logger log = LoggerFactory.getLogger("sapient");
+		
 		if (role.equals("admin")) {
 			MDC.put("userRole", "admin");
 			log.debug("Admin Action debug");

@@ -8,6 +8,7 @@ import org.junit.platform.runner.JUnitPlatform;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
+import org.mockito.Mockito;
 
 import com.sapient.dao.IDao;
 import com.sapient.exception.BalanceException;
@@ -56,6 +57,9 @@ public class TransferTest {
 									()->assertEquals(5000,account1.getBal()),
 									()->assertEquals(10000,account2.getBal())
 									);
+//		Inorder order=Mockito.inOrder(dao);
+		
+		
 	}
 	
 	@Test
