@@ -61,10 +61,10 @@ public class EmpTest {
 		nameList.add(e2);
 
 		salaryList = new ArrayList<>();
-		nameList.add(e4);
-		nameList.add(e3);
-		nameList.add(e1);
-		nameList.add(e2);
+		salaryList.add(e4);
+		salaryList.add(e3);
+		salaryList.add(e1);
+		salaryList.add(e2);
 
 	}
 
@@ -96,7 +96,7 @@ public class EmpTest {
 	@Test
 	public void empTest3(){
 		 List<Employee> actual=ser.viewEmployees("name");
-		 System.out.println(actual+"\njjjjjj");
+//		 System.out.println(actual+"\njjjjjj");
 		 assertEquals(nameList, actual);
 	}
 	@Test
