@@ -1,0 +1,40 @@
+2018-01-03 11:15:15,009 [main] TRACE  sapient - main thread start
+2018-01-03 11:15:15,012 [main] TRACE  sapient - service constructure invoked
+2018-01-03 11:15:15,013 [main] TRACE  sapient - static block called in dao
+2018-01-03 11:15:15,013 [main] DEBUG  sapient - Has map has initialized with 3 account instance
+2018-01-03 11:15:15,013 [main] TRACE  sapient - setter setDao()  invoked
+2018-01-03 11:15:15,013 [main] DEBUG  sapient - Injectind dao
+2018-01-03 11:15:15,013 [main] INFO   sapient - dao initialized
+2018-01-03 11:15:15,014 [main] INFO   sapient - Service instance is ready with dao instance
+2018-01-03 11:15:15,014 [main] DEBUG  sapient - service instance created
+2018-01-03 11:15:15,014 [main] INFO   sapient - transfer the amount RS.5000 from accId 1001 to 1002
+2018-01-03 11:15:15,014 [main] TRACE  sapient - transferfund()  invoked in service
+2018-01-03 11:15:15,015 [main] TRACE  sapient - getAccount() Invoked
+2018-01-03 11:15:15,015 [main] DEBUG  sapient - checking the aid against map key
+2018-01-03 11:15:15,015 [main] INFO   sapient - account id 1001  found
+2018-01-03 11:15:15,016 [main] DEBUG  sapient - from account retrieved
+2018-01-03 11:15:15,016 [main] TRACE  sapient - getAccount() Invoked
+2018-01-03 11:15:15,016 [main] DEBUG  sapient - checking the aid against map key
+2018-01-03 11:15:15,017 [main] ERROR  sapient - Id not found
+com.sapient.exception.IdExceptin: Id not found
+	at com.sapient.dao.DaoImpl.getAccount(DaoImpl.java:32)
+	at com.sapient.service.SerImpl.transfrFund(SerImpl.java:40)
+	at com.sapient.client.TransferClient.main(TransferClient.java:21)
+2018-01-03 11:15:15,018 [main] INFO   sapient - transfer the amount RS.5000 from accId 1003 to 1002
+2018-01-03 11:15:15,018 [main] TRACE  sapient - transferfund()  invoked in service
+2018-01-03 11:15:15,018 [main] TRACE  sapient - getAccount() Invoked
+2018-01-03 11:15:15,018 [main] DEBUG  sapient - checking the aid against map key
+2018-01-03 11:15:15,018 [main] ERROR  sapient - Id not found
+com.sapient.exception.IdExceptin: Id not found
+	at com.sapient.dao.DaoImpl.getAccount(DaoImpl.java:32)
+	at com.sapient.service.SerImpl.transfrFund(SerImpl.java:38)
+	at com.sapient.client.TransferClient.main(TransferClient.java:29)
+2018-01-03 11:15:15,018 [main] INFO   sapient - transfer the amount RS.5000 from accId 1003 to 1002
+2018-01-03 11:15:15,018 [main] TRACE  sapient - transferfund()  invoked in service
+2018-01-03 11:15:15,018 [main] TRACE  sapient - getAccount() Invoked
+2018-01-03 11:15:15,018 [main] DEBUG  sapient - checking the aid against map key
+2018-01-03 11:15:15,018 [main] ERROR  sapient - Id not found
+com.sapient.exception.IdExceptin: Id not found
+	at com.sapient.dao.DaoImpl.getAccount(DaoImpl.java:32)
+	at com.sapient.service.SerImpl.transfrFund(SerImpl.java:38)
+	at com.sapient.client.TransferClient.main(TransferClient.java:37)

@@ -1,20 +1,40 @@
-2018-01-02 17:10:57,394 [main] TRACE  sapient - service constructure invoked
-2018-01-02 17:10:57,396 [main] TRACE  sapient - static block called in dao
-2018-01-02 17:10:57,397 [main] DEBUG  sapient - Has map has initialized with 3 account instance
-2018-01-02 17:10:57,397 [main] TRACE  sapient - setter setDao()  invoked
-2018-01-02 17:10:57,397 [main] DEBUG  sapient - Injectind dao
-2018-01-02 17:10:57,397 [main] INFO   sapient - dao initialized
-2018-01-02 17:10:57,398 [main] INFO   sapient - Service instance is ready with dao instance
-2018-01-02 17:10:57,399 [main] TRACE  sapient - transferfund()  invoked in service
-2018-01-02 17:10:57,399 [main] TRACE  sapient - getAccount() Invoked
-2018-01-02 17:10:57,399 [main] DEBUG  sapient - checking the aid against map key
-2018-01-02 17:10:57,399 [main] INFO   sapient - account id 1001  found
-2018-01-02 17:10:57,400 [main] DEBUG  sapient - from account retrieved
-2018-01-02 17:10:57,400 [main] TRACE  sapient - getAccount() Invoked
-2018-01-02 17:10:57,400 [main] DEBUG  sapient - checking the aid against map key
-2018-01-02 17:10:57,401 [main] TRACE  sapient - transferfund()  invoked in service
-2018-01-02 17:10:57,402 [main] TRACE  sapient - getAccount() Invoked
-2018-01-02 17:10:57,402 [main] DEBUG  sapient - checking the aid against map key
-2018-01-02 17:10:57,402 [main] TRACE  sapient - transferfund()  invoked in service
-2018-01-02 17:10:57,402 [main] TRACE  sapient - getAccount() Invoked
-2018-01-02 17:10:57,402 [main] DEBUG  sapient - checking the aid against map key
+2018-01-03 15:58:57,081 [main] TRACE  sapient - main thread start
+2018-01-03 15:58:57,083 [main] TRACE  sapient - service constructure invoked
+2018-01-03 15:58:57,090 [main] TRACE  sapient - static block called in dao
+2018-01-03 15:58:57,101 [main] DEBUG  sapient - Has map has initialized with 3 account instance
+2018-01-03 15:58:57,101 [main] TRACE  sapient - setter setDao()  invoked
+2018-01-03 15:58:57,101 [main] DEBUG  sapient - Injectind dao
+2018-01-03 15:58:57,101 [main] INFO   sapient - dao initialized
+2018-01-03 15:58:57,102 [main] INFO   sapient - Service instance is ready with dao instance
+2018-01-03 15:58:57,102 [main] DEBUG  sapient - service instance created
+2018-01-03 15:58:57,102 [main] INFO   sapient - transfer the amount RS.5000 from accId 1001 to 1002
+2018-01-03 15:58:57,102 [main] TRACE  sapient - transferfund()  invoked in service
+2018-01-03 15:58:57,102 [main] TRACE  sapient - getAccount() Invoked
+2018-01-03 15:58:57,102 [main] DEBUG  sapient - checking the aid against map key
+2018-01-03 15:58:57,102 [main] INFO   sapient - account id 1001  found
+2018-01-03 15:58:57,104 [main] DEBUG  sapient - from account retrieved
+2018-01-03 15:58:57,104 [main] TRACE  sapient - getAccount() Invoked
+2018-01-03 15:58:57,104 [main] DEBUG  sapient - checking the aid against map key
+2018-01-03 15:58:57,105 [main] ERROR  sapient - Id not found
+com.sapient.exception.IdExceptin: Id not found
+	at com.sapient.dao.DaoImpl.getAccount(DaoImpl.java:32)
+	at com.sapient.service.SerImpl.transfrFund(SerImpl.java:40)
+	at com.sapient.client.TransferClient.main(TransferClient.java:21)
+2018-01-03 15:58:57,105 [main] INFO   sapient - transfer the amount RS.5000 from accId 1003 to 1002
+2018-01-03 15:58:57,106 [main] TRACE  sapient - transferfund()  invoked in service
+2018-01-03 15:58:57,106 [main] TRACE  sapient - getAccount() Invoked
+2018-01-03 15:58:57,106 [main] DEBUG  sapient - checking the aid against map key
+2018-01-03 15:58:57,106 [main] ERROR  sapient - Id not found
+com.sapient.exception.IdExceptin: Id not found
+	at com.sapient.dao.DaoImpl.getAccount(DaoImpl.java:32)
+	at com.sapient.service.SerImpl.transfrFund(SerImpl.java:38)
+	at com.sapient.client.TransferClient.main(TransferClient.java:29)
+2018-01-03 15:58:57,106 [main] INFO   sapient - transfer the amount RS.5000 from accId 1003 to 1002
+2018-01-03 15:58:57,106 [main] TRACE  sapient - transferfund()  invoked in service
+2018-01-03 15:58:57,106 [main] TRACE  sapient - getAccount() Invoked
+2018-01-03 15:58:57,106 [main] DEBUG  sapient - checking the aid against map key
+2018-01-03 15:58:57,106 [main] ERROR  sapient - Id not found
+com.sapient.exception.IdExceptin: Id not found
+	at com.sapient.dao.DaoImpl.getAccount(DaoImpl.java:32)
+	at com.sapient.service.SerImpl.transfrFund(SerImpl.java:38)
+	at com.sapient.client.TransferClient.main(TransferClient.java:37)

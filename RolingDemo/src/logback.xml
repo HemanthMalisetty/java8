@@ -10,29 +10,31 @@
 			<pattern>%d [%thread] %-5level %logger{35} - %msg%n</pattern>
 		</encoder>
 	</appender>
-	
+
 	<appender name="fileAppender"
 		class="ch.qos.logback.core.rolling.RollingFileAppender">
-		<file>debug.log</file>
+		<!--  <file>debug.log</file>  it causes preventing the rolling the file-->
+		<append>true</append>
 		<encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
 			<Pattern>
-				%d{yyyy-MM-dd HH:mm:ss} - %msg%n
+				%d{yyyy-MM-dd HH:mm:ss} %level - %msg%n
 			</Pattern>
 		</encoder>
 
-		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-			<fileNamePattern>log-%d{yyyy-MM-dd}.log</fileNamePattern>
-			<maxHistory>1</maxHistory>
-			<totalSizeCap>1KB</totalSizeCap>
+		<rollingPolicy
+			class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+			<fileNamePattern>app-%d{yyyy-MM-dd}.%i.log</fileNamePattern>
+			<maxFileSize>1KB</maxFileSize>
+			<maxHistory>30</maxHistory>
+			<totalSizeCap>1GB</totalSizeCap>
 		</rollingPolicy>
-		<triggeringPolicy
-			class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
-			<maxFileSize>2KB</maxFileSize>
-		</triggeringPolicy>
 
 	</appender>
 
-	<logger name="sapient" level="debug" additivity="false">
+	<!--  level="off" will prevent to any type of log 
+		<logger name="sapient" level="off" additivity="false"> 
+	-->
+	<logger name="sapient" level="trace" additivity="false">
 		<appender-ref ref="consoleAppender" />
 		<appender-ref ref="fileAppender" />
 	</logger>

@@ -1,0 +1,100 @@
+2018-01-03 09:40:00 TRACE - main thread start
+2018-01-03 09:40:00 TRACE - service constructure invoked
+2018-01-03 09:40:00 TRACE - static block called in dao
+2018-01-03 09:40:00 DEBUG - Has map has initialized with 3 account instance
+2018-01-03 09:40:00 TRACE - setter setDao()  invoked
+2018-01-03 09:40:00 DEBUG - Injectind dao
+2018-01-03 09:40:00 INFO - dao initialized
+2018-01-03 09:40:00 INFO - Service instance is ready with dao instance
+2018-01-03 09:40:00 DEBUG - service instance created
+2018-01-03 09:40:00 INFO - transfer the amount RS.5000 from accId 1001 to 1002
+2018-01-03 09:40:00 TRACE - transferfund()  invoked in service
+2018-01-03 09:40:00 TRACE - getAccount() Invoked
+2018-01-03 09:40:00 DEBUG - checking the aid against map key
+2018-01-03 09:40:00 INFO - account id 1001  found
+2018-01-03 09:40:00 DEBUG - from account retrieved
+2018-01-03 09:40:00 TRACE - getAccount() Invoked
+2018-01-03 09:40:00 DEBUG - checking the aid against map key
+2018-01-03 09:40:00 ERROR - Id not found
+com.sapient.exception.IdExceptin: Id not found
+	at com.sapient.dao.DaoImpl.getAccount(DaoImpl.java:32)
+	at com.sapient.service.SerImpl.transfrFund(SerImpl.java:40)
+	at com.sapient.client.TransferClient.main(TransferClient.java:20)
+2018-01-03 09:40:00 INFO - transfer the amount RS.5000 from accId 1003 to 1002
+2018-01-03 09:40:00 TRACE - transferfund()  invoked in service
+2018-01-03 09:40:00 TRACE - getAccount() Invoked
+2018-01-03 09:40:00 DEBUG - checking the aid against map key
+2018-01-03 09:40:00 ERROR - Id not found
+com.sapient.exception.IdExceptin: Id not found
+	at com.sapient.dao.DaoImpl.getAccount(DaoImpl.java:32)
+	at com.sapient.service.SerImpl.transfrFund(SerImpl.java:38)
+	at com.sapient.client.TransferClient.main(TransferClient.java:28)
+2018-01-03 09:40:00 INFO - transfer the amount RS.5000 from accId 1003 to 1002
+2018-01-03 09:40:00 TRACE - transferfund()  invoked in service
+2018-01-03 09:40:00 TRACE - getAccount() Invoked
+2018-01-03 09:40:00 DEBUG - checking the aid against map key
+2018-01-03 09:40:00 ERROR - Id not found
+com.sapient.exception.IdExceptin: Id not found
+	at com.sapient.dao.DaoImpl.getAccount(DaoImpl.java:32)
+	at com.sapient.service.SerImpl.transfrFund(SerImpl.java:38)
+	at com.sapient.client.TransferClient.main(TransferClient.java:36)
+2018-01-03 09:40:10 TRACE - main thread start
+2018-01-03 09:40:10 TRACE - service constructure invoked
+2018-01-03 09:40:10 TRACE - static block called in dao
+2018-01-03 09:40:10 DEBUG - Has map has initialized with 3 account instance
+2018-01-03 09:40:10 TRACE - setter setDao()  invoked
+2018-01-03 09:40:10 DEBUG - Injectind dao
+2018-01-03 09:40:10 INFO - dao initialized
+2018-01-03 09:40:10 INFO - Service instance is ready with dao instance
+2018-01-03 09:40:10 DEBUG - service instance created
+2018-01-03 09:40:10 INFO - transfer the amount RS.5000 from accId 1001 to 1002
+2018-01-03 09:40:10 TRACE - transferfund()  invoked in service
+2018-01-03 09:40:10 TRACE - getAccount() Invoked
+2018-01-03 09:40:10 DEBUG - checking the aid against map key
+2018-01-03 09:40:10 INFO - account id 1001  found
+2018-01-03 09:40:10 DEBUG - from account retrieved
+2018-01-03 16:02:57 TRACE - main thread start
+2018-01-03 16:02:57 TRACE - service constructure invoked
+2018-01-03 16:02:57 TRACE - static block called in dao
+2018-01-03 16:02:57 DEBUG - Has map has initialized with 3 account instance
+2018-01-03 16:02:57 TRACE - setter setDao()  invoked
+2018-01-03 16:02:57 DEBUG - Injectind dao
+2018-01-03 16:02:57 INFO - dao initialized
+2018-01-03 16:02:57 INFO - Service instance is ready with dao instance
+2018-01-03 16:02:57 DEBUG - service instance created
+2018-01-03 16:02:57 INFO - transfer the amount RS.5000 from accId 1001 to 1002
+2018-01-03 16:02:57 TRACE - transferfund()  invoked in service
+2018-01-03 16:02:57 TRACE - getAccount() Invoked
+2018-01-03 16:02:57 DEBUG - checking the aid against map key
+2018-01-03 16:02:57 INFO - account id 1001  found
+2018-01-03 16:02:57 DEBUG - from account retrieved
+2018-01-03 16:03:12 TRACE - main thread start
+2018-01-03 16:03:12 TRACE - service constructure invoked
+2018-01-03 16:03:12 TRACE - static block called in dao
+2018-01-03 16:03:12 DEBUG - Has map has initialized with 3 account instance
+2018-01-03 16:03:12 TRACE - setter setDao()  invoked
+2018-01-03 16:03:12 DEBUG - Injectind dao
+2018-01-03 16:03:12 INFO - dao initialized
+2018-01-03 16:03:12 INFO - Service instance is ready with dao instance
+2018-01-03 16:03:12 DEBUG - service instance created
+2018-01-03 16:03:12 INFO - transfer the amount RS.5000 from accId 1001 to 1002
+2018-01-03 16:03:12 TRACE - transferfund()  invoked in service
+2018-01-03 16:03:12 TRACE - getAccount() Invoked
+2018-01-03 16:03:12 DEBUG - checking the aid against map key
+2018-01-03 16:03:12 INFO - account id 1001  found
+2018-01-03 16:03:12 DEBUG - from account retrieved
+2018-01-03 16:06:10 TRACE - main thread start
+2018-01-03 16:06:10 TRACE - service constructure invoked
+2018-01-03 16:06:10 TRACE - static block called in dao
+2018-01-03 16:06:10 DEBUG - Has map has initialized with 3 account instance
+2018-01-03 16:06:10 TRACE - setter setDao()  invoked
+2018-01-03 16:06:10 DEBUG - Injectind dao
+2018-01-03 16:06:10 INFO - dao initialized
+2018-01-03 16:06:10 INFO - Service instance is ready with dao instance
+2018-01-03 16:06:10 DEBUG - service instance created
+2018-01-03 16:06:10 INFO - transfer the amount RS.5000 from accId 1001 to 1002
+2018-01-03 16:06:10 TRACE - transferfund()  invoked in service
+2018-01-03 16:06:10 TRACE - getAccount() Invoked
+2018-01-03 16:06:10 DEBUG - checking the aid against map key
+2018-01-03 16:06:10 INFO - account id 1001  found
+2018-01-03 16:06:10 DEBUG - from account retrieved
