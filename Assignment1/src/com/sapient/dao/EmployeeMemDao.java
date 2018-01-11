@@ -8,6 +8,7 @@ import java.util.Map;
 
 import com.sapient.exception.IdException;
 import com.sapient.exception.NotFoundException;
+import com.sapient.vo.Department;
 import com.sapient.vo.Employee;
 
 public class EmployeeMemDao implements IDao{
@@ -24,7 +25,7 @@ public class EmployeeMemDao implements IDao{
 	}
 
 	@Override
-	public List<Employee> viewEmployee() {
+	public List<Employee> viewAllEmployee() {
 		List<Employee> list=new ArrayList<Employee>();
 		list.addAll(empMap.values());
 		return list;
@@ -63,5 +64,17 @@ public class EmployeeMemDao implements IDao{
 	public int updateSalary(int eid, double salary) throws NotFoundException {
 		// TODO Auto-generated method stub
 		return 0;
+	}
+
+	@Override
+	public List<Department> viewDepartments() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Employee> viewByDepartmentId() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 }

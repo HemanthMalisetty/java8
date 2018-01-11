@@ -8,6 +8,9 @@ public class Employee implements Comparable<Employee>{
 	private double salary;
 	private int deptId;
 	private LocalDate date;
+	public Employee(){
+		
+	}
 	public Employee(int empId, String empName, double salary, int deptId, LocalDate date) {
 		super();
 		this.empId = empId;

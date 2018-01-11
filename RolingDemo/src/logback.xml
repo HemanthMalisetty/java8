@@ -13,7 +13,7 @@
 
 	<appender name="fileAppender"
 		class="ch.qos.logback.core.rolling.RollingFileAppender">
-		<!--  <file>debug.log</file>  it causes preventing the rolling the file-->
+		  <file>sapient.log</file> <!--  it causes preventing the rolling the file-->
 		<append>true</append>
 		<encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
 			<Pattern>
@@ -23,10 +23,11 @@
 
 		<rollingPolicy
 			class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
-			<fileNamePattern>app-%d{yyyy-MM-dd}.%i.log</fileNamePattern>
+			<fileNamePattern>app-%d{mm}-%i-log.txt</fileNamePattern>
+			<cleanHistoryOnStart>true</cleanHistoryOnStart>
 			<maxFileSize>1KB</maxFileSize>
-			<maxHistory>30</maxHistory>
-			<totalSizeCap>1GB</totalSizeCap>
+			<maxHistory>1</maxHistory>
+			<totalSizeCap>2MB</totalSizeCap>
 		</rollingPolicy>
 
 	</appender>

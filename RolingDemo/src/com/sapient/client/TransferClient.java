@@ -1,5 +1,7 @@
 package com.sapient.client;
 
+import java.util.Scanner;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -11,7 +13,12 @@ import com.sapient.service.SerImpl;
 public class TransferClient {
 
 	private static Logger logger=LoggerFactory.getLogger("sapient");
+	private static Scanner scan=new Scanner(System.in);
+	
 	public static void main(String[] args) {
+		do{
+			
+		
 		logger.trace("main thread start");
 		ISer ser=new SerImpl();
 		logger.debug("service instance created");
@@ -38,6 +45,7 @@ public class TransferClient {
 		} catch (BalanceException | IdExceptin e) {
 			logger.error(e.getMessage(),e);
 		}
+		}while(scan.next().equals("y"));
 
 	}
 

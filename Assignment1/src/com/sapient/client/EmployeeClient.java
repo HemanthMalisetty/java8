@@ -58,7 +58,7 @@ public class EmployeeClient {
 	
 	
 	public static void viewAll() {
-		List<Employee> list=dao.viewEmployee();
+		List<Employee> list=dao.viewAllEmployee();
 			for (Employee employee : list) {
 				System.out.println(employee);
 			}
