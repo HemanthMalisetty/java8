@@ -73,7 +73,7 @@ public class EmployeeMemDao implements IDao{
 	}
 
 	@Override
-	public List<Employee> viewByDepartmentId() {
+	public List<Employee> viewByDepartmentId(int deptid) {
 		// TODO Auto-generated method stub
 		return null;
 	}

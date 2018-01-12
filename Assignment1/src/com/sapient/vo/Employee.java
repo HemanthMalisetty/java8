@@ -37,6 +37,18 @@ public class Employee implements Comparable<Employee>{
 	public LocalDate getDate() {
 		return date;
 	}
+	public void setEmpId(int empId) {
+		this.empId = empId;
+	}
+	public void setEmpName(String empName) {
+		this.empName = empName;
+	}
+	public void setDeptId(int deptId) {
+		this.deptId = deptId;
+	}
+	public void setDate(LocalDate date) {
+		this.date = date;
+	}
 	@Override
 	public String toString() {
 		return "Employee [empId=" + empId + ", empName=" + empName + ", salary=" + salary + ", deptId=" + deptId

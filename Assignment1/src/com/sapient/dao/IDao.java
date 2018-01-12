@@ -14,7 +14,7 @@ public interface IDao {
 	int removeEmployee(int eid) throws NotFoundException;
 	int updateSalary(int eid,double salary) throws NotFoundException;
 	List<Department> viewDepartments();
-	List<Employee> viewByDepartmentId();
+	List<Employee> viewByDepartmentId(int deptid);
 }
 
 

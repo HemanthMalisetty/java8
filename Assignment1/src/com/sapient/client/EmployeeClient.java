@@ -24,7 +24,7 @@ public class EmployeeClient {
 		
 		do{
 		
-			System.out.println("Choose: ADD\nVIEW\nVIEWALL\nEDIT\nREMOVE");
+			System.out.println("Choose: ADD\nVIEW\nVIEWALL\nUPDATE\nREMOVE\nDEPTSINFO\nEMPBYDEPTID");
 			menu=scanner.next();
 			try {
 				emenu=Menu.valueOf(menu);
@@ -41,22 +41,39 @@ public class EmployeeClient {
 	
 	public static void processMenu(Menu menu) throws NotFoundException{
 		switch(menu){
+		case ADD:
+			add();
+			break;
+		case VIEW:
+			viewById();
+			break;
 		case VIEWALL:
 			viewAll();
 			break;
 			
-		case VIEW:
-			viewById();
+		
+		
+//		case UPDATE:
+//			update();
+//			break;
+//		case REMOVE:
+//			remove();
+//			break;
+		case DEPTS_INFO:
+			viewAllDepartments();
 			break;
-		case ADD:
-			add();
+		case EMP_BY_DEPTID:
+			viewEmployeeByDepartmentId();
 			break;
-			
 		}
 		
 	}
-	
-	
+	public static void viewAllDepartments() {
+		
+	}
+	public static void viewEmployeeByDepartmentId() {
+		
+	}
 	public static void viewAll() {
 		List<Employee> list=dao.viewAllEmployee();
 			for (Employee employee : list) {
@@ -68,7 +85,9 @@ public class EmployeeClient {
 		System.out.println("Enter employee id");
 		int eid=scanner.nextInt();
 		try {
+			
 			dao.viewEmployee(eid);
+			
 			System.out.println(dao.viewEmployee(eid));
 		} catch (NotFoundException e) {
 			e.getMessage();
