@@ -6,6 +6,6 @@ import com.sapient.vo.Answer;
 import com.sapient.vo.Questions;
 
 public interface IExamSer {
-	List<Questions> generateQuestions();
+	List<Questions> generateQuestions(int nos);
 	int evaluate(List<Answer> anslist);
 }

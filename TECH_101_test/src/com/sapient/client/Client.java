@@ -18,7 +18,7 @@ public class Client {
 			
 			System.out.println("Start quiz");
 			IExamSer ser= ExamSerImpl.getInstance();
-			List<Questions> list=ser.generateQuestions();
+			List<Questions> list=ser.generateQuestions(5);
 			List<Answer> ansList= new ArrayList<Answer>();
 			Answer answer=null;
 			int i=0;
